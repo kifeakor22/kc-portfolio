@@ -1,3 +1,7 @@
+:root {
+  --boxBackGroundColor: rgb(109, 183, 215);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +26,7 @@ nav {
 }
 
 h1 {
-  background-color: rgb(109, 183, 215);
+  background-color: var(--boxBackGroundColor);
   padding-left: 35px;
   padding-right: 15px;
 
@@ -34,10 +38,28 @@ li {
 
 }
 a {
-  color:rgb(109, 183, 215) ;
-  text-decoration-line: underline rgb(109, 183, 215);
+  color:rgb(109, 183, 215);
+  text-decoration: underline solid var(--boxBackGroundColor);
 }
 
+.hero-banner {
+  display: flex;
+  background-image: url(/images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+}
+.hero-banner h2 {
+  background-color: var(--boxBackGroundColor);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10%;
+  margin-right: 80px;
+}
 h1,
 h2,
 h3,
