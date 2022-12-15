@@ -8,6 +8,36 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(21, 51, 62);
+  color: rgb(21, 37, 46);
+}
+nav {
+  text-align: right;
+}
+
+h1 {
+  background-color: rgb(109, 183, 215);
+  padding-left: 35px;
+  padding-right: 15px;
+
+}
+
+li {
+  display: inline-block;
+  padding: 25px;
+
+}
+a {
+  color:rgb(109, 183, 215) ;
+  text-decoration-line: underline rgb(109, 183, 215);
+  font-size: 28px;
+}
 
 h1,
 h2,
