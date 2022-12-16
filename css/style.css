@@ -1,5 +1,6 @@
 :root {
   --boxBackGroundColor: rgb(109, 183, 215);
+  --borderline: 4px;
 }
 
 * {
@@ -12,6 +13,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -60,6 +62,112 @@ a {
   margin-bottom: 10%;
   margin-right: 80px;
 }
+/* css selector to add article content in index.html*/
+
+#griditem-article::before{
+  display: block;
+}
+
+#about {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "a b";
+  color: rgb(41, 99, 96);
+}
+
+#gridItem-aboutMe {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: a;
+  border-right: 2px solid rgb(45, 113, 138);
+  font-size: xx-large;
+  padding-right: 20px;
+  align-items: flex-start;
+}
+
+#griditem-article {
+  grid-area: b;
+  padding-left: 40px;
+  align-items: flex-start;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#work {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-areas:
+  "work-grid surf-grid surf-grid"
+  "work-grid led-grid calculator-grid"
+  "work-grid puzzle-grid run-grid"
+  ;
+}
+#work-grid-item {
+  padding-right: 10px;
+  grid-area: work-grid;
+  border-right: 2px solid rgb(45, 113, 138);
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: xx-large;
+  color:rgb(10, 72, 72) ;
+}
+#surf-grid-item {
+  margin: 10px 10px 10px 40px;
+  background-image: url(/images/02-portfolio-1.jpg);
+  grid-area: surf-grid;
+  border: var(--borderline) solid var(--boxBackGroundColor);
+}
+#led-grid-item {
+  margin: 10px 10px 10px 40px;
+  background-image: url(/images/02-portfolio-2.jpg);
+  grid-area: led-grid;
+  border:var(--borderline)solid var(--boxBackGroundColor) ;
+}
+#Calculator-grid-item {
+  margin: 10px;
+  background-image:url(/images/02-portfolio-3.jpg);
+  grid-area: calculator-grid;
+  border: var(--borderline) solid var(--boxBackGroundColor);
+}
+#Puzzle-grid-item {
+  margin: 10px 10px 10px 40px;
+  background-image: url(/images/02-portfolio-4.jpg);
+  grid-area: puzzle-grid;
+  border: var(--borderline) solid var(--boxBackGroundColor);
+}
+#Run-grid-item{
+  margin: 10px;
+  background-image: url(/images/02-run-buddy.jpg);
+  grid-area: run-grid;
+  border: var(--borderline) solid var(--boxBackGroundColor);
+}
+
+.work-grid-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+}
+.project-title {
+  background-color: var(--boxBackGroundColor);
+}
 h1,
 h2,
 h3,
@@ -71,4 +179,5 @@ h6 {
 
 p {
   margin: 0;
+  display: block;
 }
