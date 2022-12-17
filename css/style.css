@@ -1,5 +1,5 @@
 :root {
-  --boxBackGroundColor: rgb(109, 183, 215);
+  --boxBackGroundColor: rgb(106, 180, 209);
   --borderline: 4px;
   --left-text: color:rgb(10, 72, 72) ;
 }
@@ -13,7 +13,20 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  color: rgb(22, 55, 94)
+  color: rgb(51, 51, 71)
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  display: block;
 }
 
 header {
@@ -21,10 +34,15 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgb(21, 51, 62);
-  color: rgb(21, 37, 46);
+  background-color: rgb(55, 52, 68);
+  height: 5em;
+}
+.headerimage {
+  margin-right: 7%;
+  padding: 10px;
 }
 nav {
+  display: flex;
   text-align: right;
 }
 
@@ -32,27 +50,31 @@ h1 {
   background-color: var(--boxBackGroundColor);
   padding-left: 35px;
   padding-right: 15px;
-
 }
 
 li {
   display: inline-block;
   padding: 25px;
-
 }
+
 li a {
-  color:rgb(109, 183, 215);
+  color:var(--boxBackGroundColor);
   border-bottom: solid var(--boxBackGroundColor);
   text-decoration: none;
   font-weight: bolder;
 }
+
 a{
   text-decoration: underline solid var(--boxBackGroundColor);
 }
 
 #profile-pic {
-  display: flex;
-  height: 100px;
+  position: relative;
+  bottom: -80px;
+  border-radius: 50%;
+  height: 150px;
+  border: 5px solid var(--boxBackGroundColor);
+
 }
 .hero-banner {
   display: flex;
@@ -150,7 +172,7 @@ a{
 }
 #Calculator-grid-item {
   margin: 10px;
-  background-image:url(/images/02-portfolio-3.jpg);
+  background-image:url(/images/Cod-refactor.png);
   grid-area: calculator-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
@@ -183,7 +205,24 @@ a{
 }
 
 #surf-grid-item:hover {
-  box-shadow: 0 0 10px rgb(112, 224, 20);  /* Adds a white shadow on hover */
+  background-size: 150% 150%;
+  box-shadow: 0 0 10px rgb(207, 250, 13);  /* Adds a white shadow on hover */
+}
+#led-grid-item:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 0 10px rgb(207, 250, 13);  /* Adds a white shadow on hover */
+}
+#Calculator-grid-item:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 0 10px rgb(207, 250, 13);  /* Adds a white shadow on hover */
+}
+#Puzzle-grid-item:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 0 10px rgb(207, 250, 13);  /* Adds a white shadow on hover */
+}
+#Run-grid-item:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 0 10px rgb(207, 250, 13);  /* Adds a white shadow on hover */
 }
 
 #contact-grid {
@@ -215,18 +254,4 @@ a{
 h4 {
   font-weight: normal;
   font-family: Arial, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  display: block;
 }
