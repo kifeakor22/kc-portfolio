@@ -13,11 +13,12 @@
   <!-- main logo / nav -->
   <header>
     <h1>KC Ifeakor</h1>
+    <!--<img src="/images/me.jpg" alt="my profile picture" id="profile-pic"> -->
     <nav>
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact-grid">Contact Me</a></li>
         <li><a href="#">Resume</a></li>
       </ul>
     </nav>
@@ -68,43 +69,56 @@
         <div class="work-grid-area" id="work-grid-item">
             <h2>Work</h2>
         </div>
-        <div class="work-grid-area" id="surf-grid-item">
+        <a class="work-grid-area" id="surf-grid-item" href="#">
           <div class="project-title">
             <h2>Surf Report</h2>
             <h4>top of the stack</h4>
           </div>
-        </div>
-        <div class="work-grid-area" id="led-grid-item">
+        </a>
+        <a class="work-grid-area" id="led-grid-item" href="#">
           <div class="project-title">
             <h2>LED Wall</h2>
             <h4>node ti</h4>
           </div>
-        </div>
-        <div class="work-grid-area" id="Calculator-grid-item">
+        </a>
+        <a class="work-grid-area" id="Calculator-grid-item" href="#about">
           <div class="project-title">
             <h2>Calculator</h2>
             <h4>stack calcuator</h4>
           </div>
-        </div>
-        <div class="work-grid-area" id="Puzzle-grid-item">
+        </a>
+        <a class="work-grid-area" id="Puzzle-grid-item" href="#">
           <div class="project-title">
             <h2>Puzzle  app</h2>
             <h4>top of the stack</h4>
           </div>
-        </div>
-        <div class="work-grid-area" id="Run-grid-item">
+        </a>
+        <a class="work-grid-area" id="Run-grid-item" href="#">
           <div class="project-title">
             <h2>Run Ruddy</h2>
             <h4>Run and run</h4>
           </div>
-        </div>
+        </a>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section contact" id="contact-grid">
+      <div class="contact-grid-area" id="contactme-grid-item">
+        <div class="left-text">
+          <h2>Contact</h2>
+          <h2>Me</h2>
+        </div>
+      </div>
+      <div class="contact-grid-area" id="socail-link-grid-item">
+        <ul>
+          <li><a href="#">555 555 555</a></li>
+          <li><a href="mailto:info@bootcamp.com">lenerato@gmail.com</a></li>
+          <li><a href="https://www.github.com/" target="_blank">GitHub</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.spotify.com" target="_blank">Spotify</a></li> <!--add a a mailto protocol-->
+        </ul>
+      </div>
     </section>
   </main>
 </body>
-
 </html>
