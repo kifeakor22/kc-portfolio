@@ -11,7 +11,7 @@ This source code is available to everyone under the standard MIT license.
 
 This site is deployed using [GitHub Pages](https://pages.github.com/) at https://kifeakor22.github.io/kc-portfolio/
 
-![This is the deployed site](./assets/images/readme.png)
+![This is the deployed site](/assets/images/readme.png)
 
 ## Installation
 
