@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgb(55, 52, 68);
+  background-color: white;
   height: 5em;
 }
 .headerimage {
@@ -70,7 +70,7 @@ a{
 
 #profile-pic {
   position: relative;
-  bottom: -80px;
+  bottom: -50px;
   border-radius: 50%;
   height: 150px;
   border: 5px solid var(--boxBackGroundColor);
@@ -81,7 +81,7 @@ a{
   background-image: url(/images/02-hero-bg.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 15em;
   width: 100%;
   align-items: flex-end;
   justify-content: flex-end;
@@ -166,7 +166,7 @@ a{
 }
 #led-grid-item {
   margin: 10px 10px 10px 40px;
-  background-image: url(/images/02-portfolio-1.jpg);
+  background-image: url(/images/Jakes.jpg);
   grid-area: led-grid;
   border:var(--borderline)solid var(--boxBackGroundColor) ;
 }
@@ -254,4 +254,39 @@ a{
 h4 {
   font-weight: normal;
   font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    font-size: 10px;
+  }
+  header {
+    overflow: hidden;
+    position: relative;
+  }
+  .mobile-nav {
+    display:block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #work {
+    grid-template-rows:300px 300px 300px 300px 300px ;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+    "work-grid surf-grid"
+    "work-grid led-grid"
+    "work-grid calculator-grid"
+    "work-grid puzzle-grid"
+    "work-grid run-grid"
+    ;
+  }
+  #socail-link-grid-item {
+    font-size: smaller;
+
+  }
+
+  .left-text {
+    font-size: 10px;
+  }
 }
