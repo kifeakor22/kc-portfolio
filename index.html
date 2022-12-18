@@ -5,41 +5,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>KC Ifeakor Web Developer</title>
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
+  <header class="mobile-nav">
+    <h1>KC Ifeakor</h1>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact-grid">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
     </nav>
+    <div class="headerimage">
+      <img src="/images/profilepic.jpg" alt="my profile picture" id="profile-pic">
+    </div>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>My Web Developmet Portfolio!</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <div id="gridItem-aboutMe">
+        <div class="left-text">
+          <h2>About</h2>
+          <h2>Me</h2>
+        </div>
+        </div>
+      <div id="griditem-article">
+        <article>
+          <p>
+            Hello! My name is Kc Ifeakor and I am a web developer based in London. I have been working in the industry for 4 years and have a passion for creating beautiful and functional websites. I am always looking for new and interesting projects to work on, and I am excited to bring my skills and experience to a variety of different projects.
+          </p>  
+        </article#>
+        <br>
+        <article>
+          <p>
+            In my current role, I have had the opportunity to work on a wide range of projects, including the ones displayed below. I have a strong foundation in HTML, CSS, and JavaScript, and I am always looking to learn and expand my skillset. I am a team player and enjoy working with others to find creative solutions to complex problems. I am confident in my ability to deliver high-quality work on time and on budget, and I am excited to take on new challenges in the future.
+          </p>
+        </article>
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+        <div class="work-grid-area" id="work-grid-item">
+            <h2 class="left-text">Work</h2>
+        </div>
+        <a class="work-grid-area" id="surf-grid-item" href="#">
+          <div class="project-title">
+            <h2>Furniture Shop</h2>
+            <h4>html and css</h4>
+          </div>
+        </a>
+        <a class="work-grid-area" id="led-grid-item" target="_blank" href="https://kifeakor22.github.io/jakes-eatery/">
+          <div class="project-title">
+            <h2>Jake's Eatery</h2>
+            <h4>html and css flexbox</h4>
+          </div>
+        </a>
+        <a class="work-grid-area" id="Calculator-grid-item" target="_blank" href="https://kifeakor22.github.io/code-refactor/">
+          <div class="project-title">
+            <h2>Code-refactor</h2>
+            <h4>semantic html</h4>
+          </div>
+        </a>
+        <a class="work-grid-area" id="Puzzle-grid-item" href="#">
+          <div class="project-title">
+            <h2>Puzzle  app</h2>
+            <h4>top of the stack</h4>
+          </div>
+        </a>
+        <a class="work-grid-area" id="Run-grid-item" href="#">
+          <div class="project-title">
+            <h2>Pizza Shop</h2>
+            <h4>django</h4>
+          </div>
+        </a>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section contact" id="contact-grid">
+      <div class="contact-grid-area" id="contactme-grid-item">
+        <div class="left-text">
+          <h2>Contact</h2>
+          <h2>Me</h2>
+        </div>
+      </div>
+      <div class="contact-grid-area" id="socail-link-grid-item">
+        <ul>
+          <li><a href="tel:07807886318">+44 7807886318</a></li>
+          <li><a href="mailto:kifeakor@yahoo.com">kifeakor@yahoo.com</a></li>
+          <li><a href="https://www.github.com/kifeakor22/" target="_blank">GitHub</a></li>
+          <li><a href="https://www.twitter.com/kifeakor" target="_blank">Twitter</a></li>
+          <li><a href="https://www.spotify.com" target="_blank">Spotify</a></li> <!--add a a mailto protocol-->
+        </ul>
+      </div>
     </section>
   </main>
 </body>
-
 </html>
