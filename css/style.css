@@ -160,31 +160,31 @@ a{
   background-size: cover;
   cursor: pointer;
   margin: 10px 10px 10px 40px;
-  background-image: url(/images/02-portfolio-4.jpg);
+  background-image: url(./images/02-portfolio-4.jpg);
   grid-area: surf-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
 #led-grid-item {
   margin: 10px 10px 10px 40px;
-  background-image: url(/images/Jakes.jpg);
+  background-image: url(./images/Jakes.jpg);
   grid-area: led-grid;
   border:var(--borderline)solid var(--boxBackGroundColor) ;
 }
 #Calculator-grid-item {
   margin: 10px;
-  background-image:url(/images/Cod-refactor.png);
+  background-image:url(./images/Cod-refactor.png);
   grid-area: calculator-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
 #Puzzle-grid-item {
   margin: 10px 10px 10px 40px;
-  background-image: url(/images/02-portfolio-2.jpg);
+  background-image: url(./images/02-portfolio-2.jpg);
   grid-area: puzzle-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
 #Run-grid-item{
   margin: 10px;
-  background-image: url(/images/02-run-buddy.jpg);
+  background-image: url(./images/02-run-buddy.jpg);
   grid-area: run-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
