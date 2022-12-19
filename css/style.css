@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: white;
+  background-color: rgb(4, 33, 62);
   height: 5em;
 }
 .headerimage {
@@ -160,7 +160,7 @@ a{
   background-size: cover;
   cursor: pointer;
   margin: 10px 10px 10px 40px;
-  background-image: url(/images/02-portfolio-4.jpg);
+  background-image: url(../images/furniture.png);
   grid-area: surf-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
@@ -172,7 +172,7 @@ a{
 }
 #Calculator-grid-item {
   margin: 10px;
-  background-image:url(/images/Cod-refactor.png);
+  background-image:url(../images/refactor.png);
   grid-area: calculator-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
@@ -248,12 +248,22 @@ a{
 #socail-link-grid-item {
   grid-area: socail-links;
   font-size: larger;
+  display: flex;
 
 }
 
 h4 {
   font-weight: normal;
   font-family: Arial, sans-serif;
+}
+
+.contact-grid-area {
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
 }
 
 @media screen and (max-width: 780px) {
@@ -283,7 +293,8 @@ h4 {
   }
   #socail-link-grid-item {
     font-size: smaller;
-
+    display:flex;
+    position: relative;
   }
 
   .left-text {
