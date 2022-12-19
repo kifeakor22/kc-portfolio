@@ -160,7 +160,7 @@ a{
   background-size: cover;
   cursor: pointer;
   margin: 10px 10px 10px 40px;
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/furniture.png);
   grid-area: surf-grid;
   border: var(--borderline) solid var(--boxBackGroundColor);
 }
