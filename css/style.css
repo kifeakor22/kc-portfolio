@@ -280,20 +280,14 @@ h4 {
     right: 0;
     top: 0;
   }
-  #work {
-    grid-template-rows:300px 300px 300px 300px 300px ;
-    grid-template-columns: 20% 80%;
-    grid-template-areas:
-    "work-grid surf-grid"
-    "work-grid led-grid"
-    "work-grid calculator-grid"
-    "work-grid puzzle-grid"
-    "work-grid run-grid"
-    ;
-  }
+  #surf-grid-item {
+    width: 230px;
+    height: auto;
+  };
+  
   #socail-link-grid-item {
     font-size: smaller;
-    display:flex;
+    display:inline-block;
     position: relative;
   }
 
